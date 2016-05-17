@@ -1,0 +1,10 @@
+<launch>
+
+  <node pkg="loam_back_and_forth" type="scanRegistration_bf" name="scanRegistration_bf" output="screen"/>
+  <node pkg="loam_back_and_forth" type="laserOdometry_bf" name="laserOdometry_bf" output="screen"/>
+  <node pkg="loam_back_and_forth" type="laserMapping_bf" name="laserMapping_bf" output="screen"/>
+  <node pkg="loam_back_and_forth" type="transformMaintenance_bf" name="transformMaintenance_bf" output="screen"/>
+
+  <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz" args="-d $(find loam_back_and_forth)/rviz_cfg/loam_back_and_forth.rviz"/>
+
+</launch>
