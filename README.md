@@ -4,7 +4,7 @@ This is a LOAM (Lidar Odometry and Mapping) ROS package for back and forth tilti
 
 Wiki Webpage by the Author: [http://wiki.ros.org/loam_back_and_forth](http://wiki.ros.org/loam_back_and_forth)
 
-J. Zhang and S. Singh. LOAM: Lidar Odometry and Mapping in Real-time. Robotics: Science and Systems Conference (RSS). Berkeley, CA, July 2014.([PDF](http://www.frc.ri.cmu.edu/~jizhang03/Publications/RSS_2014.pdf))
+J. Zhang and S. Singh. LOAM: Lidar Odometry and Mapping in Real-time. Robotics: Science and Systems Conference (RSS). Berkeley, CA, July 2014.([PDF](http://www.frc.ri.cmu.edu/~jizhang03/Publications/RSS_2014.pdf))([VIDEO](https://www.youtube.com/watch?feature=player_embedded&v=8ezyhTAEyHs))
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=8ezyhTAEyHs
 " target="_blank"><img src="http://img.youtube.com/vi/8ezyhTAEyHs/0.jpg" 
