@@ -30,7 +30,7 @@ Here I assume you have a Catkin worksapce under ~/ros_workspace/catkin_ws.
 + **rosbay play nsh_staircase.bag** or **rosbay play nsh_undulating_motion.bag**
 + (use -r 0.5 if the result look bad and it is due to the less powerful CPU, (e.g. rosbay play nsh_staircase.bag -r 0.5))
 
-YOU SOULD SEE A RESULT SIMILAR TO THEIR DEMO VIDEO ([nsh_staircase DEMO VIDEO](http://www.frc.ri.cmu.edu/~jizhang03/Videos/nsh_staircase.mp4) and [nsh_undulating_motion DEMO VIDEO](http://www.frc.ri.cmu.edu/~jizhang03/Videos/nsh_undulating_motion.mp4)). GOOD LUCK.
+YOU SHOULD SEE A RESULT SIMILAR TO THEIR DEMO VIDEO ([nsh_staircase DEMO VIDEO](http://www.frc.ri.cmu.edu/~jizhang03/Videos/nsh_staircase.mp4) and [nsh_undulating_motion DEMO VIDEO](http://www.frc.ri.cmu.edu/~jizhang03/Videos/nsh_undulating_motion.mp4)). GOOD LUCK.
 
 # Original Introduction by the author:
 
