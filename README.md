@@ -30,9 +30,9 @@ Here I assume you have a Catkin worksapce under ~/ros_workspace/catkin_ws.
 + **rosbay play nsh_staircase.bag** or **rosbay play nsh_undulating_motion.bag**
 + (use -r 0.5 if the result look bad and it is due to the less powerful CPU, (e.g. rosbay play nsh_staircase.bag -r 0.5))
 
-YOU SHOULD SEE A RESULT SIMILAR TO THEIR DEMO VIDEO([nsh_staircase DEMO VIDEO](http://www.frc.ri.cmu.edu/~jizhang03/Videos/nsh_staircase.mp4) and [nsh_undulating_motion DEMO VIDEO](http://www.frc.ri.cmu.edu/~jizhang03/Videos/nsh_undulating_motion.mp4)). GOOD LUCK.
---
-# Original Introduction:
+YOU SOULD SEE A RESULT SIMILAR TO THEIR DEMO VIDEO ([nsh_staircase DEMO VIDEO](http://www.frc.ri.cmu.edu/~jizhang03/Videos/nsh_staircase.mp4) and [nsh_undulating_motion DEMO VIDEO](http://www.frc.ri.cmu.edu/~jizhang03/Videos/nsh_undulating_motion.mp4)). GOOD LUCK.
+
+# Original Introduction by the author:
 
 Lidar Odometry and Mapping (Loam) is a realtime method for state estimation and mapping using a 3D lidar, and optionally an IMU. The program contains four nodes. The “scanRegistration” node stacks laser scans within a sweep and publishes them as point cloud. The “laserOdometry” node estimates motion of the lidar between two sweeps, at a higher frame rate. The node corrects distortion in the point cloud from motion of the lidar. The “laserMapping” node takes the output of “laser_odometry” and incrementally builds a map. It also computes pose of the lidar on the map, at a lower frame rate. The state estimation of the lidar is combination of the outputs from “laserOdometry” and “laserMapping”, integrated in the “transformMaintenance” node. 
 
