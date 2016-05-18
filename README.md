@@ -6,6 +6,31 @@ Wiki Webpage: [http://wiki.ros.org/loam_back_and_forth](http://wiki.ros.org/loam
 
 J. Zhang and S. Singh. LOAM: Lidar Odometry and Mapping in Real-time. Robotics: Science and Systems Conference (RSS). Berkeley, CA, July 2014.([PDF](http://www.frc.ri.cmu.edu/~jizhang03/Publications/RSS_2014.pdf)),([VIDEO](https://www.youtube.com/watch?v=8ezyhTAEyHs))
 
+# how to use
+Here I assume you have a Catkin worksapce under ~/ros_workspace/catkin_ws.
+
+(1) gitclone the package into your "src" folder.
+cd ~/ros_workspace/catkin_ws/src
+git clone https://github.com/daobilige-su/loam_back_and_forth
+
+(2) compile the package
+cd ~/ros_workspace/catkin_ws
+catkin_make
+
+(3) download a ROS bag file for test dataset.
+roscd loam_back_and_forth
+mkdir data 
+download [nsh_staircase](www.frc.ri.cmu.edu/~jizhang03/Datasets/nsh_staircase.bag) and [nsh_undulating_motion](www.frc.ri.cmu.edu/~jizhang03/Datasets/nsh_undulating_motion.bag) dataset into your ~/ros_workspace/catkin_ws/src/loam_back_and_forth/data/ folder.
+
+(4) run the package and rosbag file
+1) in 1st terminal:
+roslaunch loam_back_and_forth loam_back_and_forth.launch
+2) in 2nd terminal:
+roscd loam_back_and_forth/data/
+rosbay play nsh_staircase.bag or rosbay play nsh_undulating_motion.bag
+(use -r 0.5 if the result look bad and it is due to the less powerful CPU, (e.g. rosbay play nsh_staircase.bag -r 0.5))
+
+
 --
 Original Introduction:
 
